@@ -12,6 +12,7 @@
   "parser": "@typescript-eslint/parser",
   "rules": {
     "comma-dangle": "off",
+    "import/prefer-default-export": "off",
     "no-use-before-define": "error",
     "no-console": "off",
     "no-underscore-dangle": "off",

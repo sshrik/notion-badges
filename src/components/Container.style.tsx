@@ -7,36 +7,38 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
 
-  .app-logo {
-    width: 350px;
-    object-fit: cover;
-    margin-bottom: 20px;
+export const FormContainer = styled.form`
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+`;
+
+export const Input = styled.input`
+  width: calc(100% - 24px);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #333333;
+
+  &:focus {
+    border: 1px solid #0ea5e9;
   }
 `;
 
-export const ProjectInforContainer = styled.div`
-  width: 361px;
-  .project-detail {
-    display: flex;
-    flex-direction: row;
-    p,
-    a {
-      font-size: 14px;
-    }
-    p {
-      margin-right: 6px;
-    }
-
-    a,
-    a:link,
-    a:visited {
-      color: #3988ff;
-    }
-  }
-`;
-
-export const ProjectHeader = styled.p`
-  font-size: 24px;
+export const Label = styled.label`
+  font-size: 18px;
   font-weight: 500;
+`;
+
+export const Button = styled.button`
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
 `;
