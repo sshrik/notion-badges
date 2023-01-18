@@ -42,3 +42,8 @@ export const Button = styled.button`
   border-radius: 4px;
   border: none;
 `;
+
+export const Title = styled.h1`
+  font-size: 24px;
+  font-weight: 500;
+`;

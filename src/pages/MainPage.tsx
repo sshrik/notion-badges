@@ -1,10 +1,13 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import Badge from 'components/Badge';
 import * as S from 'components/Container.style';
 
 const MainPage: React.FC = () => {
+  const { t } = useTranslation();
+
   const { search } = useLocation();
 
   const [searchParams] = useSearchParams(search);
@@ -26,18 +29,19 @@ const MainPage: React.FC = () => {
     return (
       <S.Container>
         <S.FormContainer autoComplete="off">
-          <S.Label>이름</S.Label>
+          <S.Title>{t('title')}</S.Title>
+          <S.Label>{t('badge-name-label')}</S.Label>
           <S.Input
             id="name"
             type="text"
-            placeholder="뱃지 이름"
+            placeholder={t('badge-name-placeholder')}
             {...register('name', { required: true })}
           />
-          <S.Label>값</S.Label>
+          <S.Label>{t('badge-value-label')}</S.Label>
           <S.Input
             id="value"
             type="text"
-            placeholder="뱃지 값"
+            placeholder={t('badge-value-placeholder')}
             {...register('value', { required: true })}
           />
           <S.Button
