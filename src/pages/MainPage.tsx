@@ -30,7 +30,7 @@ const MainPage: React.FC = () => {
     const nameList = JSON.stringify(getValues('name').map((value) => value));
     const valueList = JSON.stringify(getValues('value').map((value) => value));
 
-    navigate(`/?name=${nameList}&value=${valueList}`);
+    navigate(`?name=${nameList}&value=${valueList}`);
   };
 
   const handleAddBadge: React.MouseEventHandler<HTMLButtonElement> = (e) => {
