@@ -19,6 +19,8 @@
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "@typescript-eslint/no-unnecessary-type-constraint" : "off",
+    "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off",
     "import/order": [
       "error", 
       {
