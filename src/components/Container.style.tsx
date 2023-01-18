@@ -9,6 +9,17 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+export const BadgeContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
 export const FormContainer = styled.form`
   width: 320px;
   display: flex;
@@ -18,21 +29,8 @@ export const FormContainer = styled.form`
   gap: 16px;
 `;
 
-export const Input = styled.input`
-  width: calc(100% - 24px);
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 16px;
-  outline: none;
-  border: 1px solid #333333;
-
-  &:focus {
-    border: 1px solid #0ea5e9;
-  }
-`;
-
-export const Label = styled.label`
-  font-size: 18px;
+export const Title = styled.h1`
+  font-size: 24px;
   font-weight: 500;
 `;
 
@@ -41,9 +39,19 @@ export const Button = styled.button`
   padding: 8px 12px;
   border-radius: 4px;
   border: none;
+  background-color: #0ea5e9;
+  color: #ffffff;
 `;
 
-export const Title = styled.h1`
-  font-size: 24px;
+export const TextButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  color: #333333;
 `;
